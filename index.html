@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @font-face {
+            font-family: "Norse-Bold";
+            src: url("Norse-Bold.otf");
+        }
+
+        :root {
+            --left_marg: 40px;
+        }
+
+        body {
+            overscroll-behavior: none;
+            display: flex;
+        }
+
+        .img {
+            background-image: url("leaves.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 400px;
+            height: 700px;
+            position: relative;
+        }
+
+        .img>.text {
+            position: absolute;
+            top: 14%;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            padding: 25px 0px;
+            color: white;
+            font-family: 'Norse-Bold';
+        }
+
+        .text>img {
+            width: 80px;
+            height: 100px;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: rgb(238, 236, 236);
+        }
+
+        #form-upper-text {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 23px;
+            font-weight: bold;
+            width: 80%;
+            margin-top: 8%;
+            margin-bottom: 40px;
+            margin-left: var(--left_marg);
+        }
+
+        #form-below-button {
+            margin-left: var(--left_marg);
+        }
+
+        #form-below-text {
+            margin-left: var(--left_marg);
+            margin-top: 20px;
+            font-weight: 550;
+        }
+
+        .form-container {
+            background-color: white;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-shadow: -2px 2px 7px rgb(153, 153, 153), -2px 2px 7px rgb(153, 153, 153);
+        }
+
+        .form-container>* {
+            margin-left: var(--left_marg);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 35px 12px 35px;
+            background-color: #596D48;
+            border: none;
+            border-radius: 11px;
+            font-size: 12.5px;
+            font-weight: bold;
+            color: white;
+            transition: all 0.5s ease;
+            box-shadow: -2px 2px 7px rgb(153, 153, 153), -2px 2px 7px rgb(153, 153, 153);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(1, 160, 1);
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            /* border:1px solid black; */
+            width: 70%;
+            margin-top: 20px;
+        }
+        .input-wrap{
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            width: 40%;
+            padding-right: 5%;
+        }
+        label {
+            font-size: 12.5px;
+            font-weight: bold;
+            color: rgb(109, 103, 103);
+        }
+
+        input {
+            border:2px solid rgb(180, 179, 179);
+            border-radius: 5px;
+        }
+        input:focus {
+            outline: none;
+            border: 2px solid blue;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+        a:hover {
+            color:darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <div class="text"><img src="odin-lined.png" alt="" srcset="">ODIN</div>
+    </div>
+    <div class="form">
+        <div id="form-upper-text">
+            <span>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up now to get started.<br><br>
+                You know you want to
+            </span>
+        </div>
+        <div class="form-container">
+            <div style="font-size: 30px;font-weight: bold;color: rgb(97, 96, 96);">Let's do this!</div>
+            <form action="#">
+                <div class="input-wrap">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="input-wrap">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="input-wrap">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-wrap">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="text" id="phoneNumber" required>
+                </div>
+                <div class="input-wrap">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input-wrap">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+            </form>
+        </div>
+        <div id="form-below-button"><button>Create Account</button></div>
+        <div id="form-below-text">Already have an account ? <a href="google.com">log in</a></div>
+    </div>
+
+
+</body>
+
+</html>
